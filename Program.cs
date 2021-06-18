@@ -14,9 +14,9 @@ namespace Proyecto_U5_yU6
         public DateTime fechadepublicacion { get; set; }
         public string comentario { get; set; }
         public string direccion_ip { get; set; }
+       
+       public int likes { get; set; }
         public bool inapropiado { get; set; }
-        public int likes { get; set; }
-
         public override string ToString()
         {
             return string.Format($"{creador} - Comentario: {comentario} - Inapropiado {inapropiado} - IP: {direccion_ip} - Fecha {fechadepublicacion} - Likes {likes}");          //Codigo para que imprima 
